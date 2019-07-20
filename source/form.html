@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кэт энерджи - анкета на подбор питания</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__image" src="" width="" height="" alt="Логотип Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-menu">
+            <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-menu__item"><a class="site-menu__link">Подбор программы</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <section>
+        <h2 class="visually-hidden">Анкета для подбора питания</h2>
+        <form class="page-main__form check-form" action="https://htmlacademy.ru/echo" method="post">
+          <fieldset class="check-form__group main-info">
+            <label for="main-info__name">Имя:*</label>
+            <input id="main-info__name" type="text" name="name" placeholder="Барсик" required>
+
+            <label for="main-info__weight">Вес (кг):*</label>
+            <input id="main-info__weight" type="number" name="weight" placeholder="7" required>
+
+            <label for="main-info__age">Возраст (лет):</label>
+            <input id="main-info__age" type="number" name="age" placeholder="7">
+          </fieldset>
+
+          <fieldset class="check-form__group tasks-info">
+            <label for="tasks-info__slimming">Похудение</label>
+            <input id="tasks-info__slimming" type="radio" name="task" value="slimming" checked>
+
+            <label for="tasks-info__weighting">Набор массы</label>
+            <input id="tasks-info__weighting" type="radio" name="task" value="weighting">
+
+            <label for="tasks-info__recommend">Не знаю (Нужен ваш совет)</label>
+            <input id="tasks-info__recommend" type="radio" name="task" value="recommend">
+          </fieldset>
+
+          <fieldset class="check-form__group contacts-info">
+            <legend class="check-form__title">Контактные данные (владельца кота)</legend>
+
+            <label for="contacts-info__email">E-mail:*</label>
+            <input id="contacts-info__email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+
+            <label for="contacts-info__tel">Телефон:*</label>
+            <input id="contacts-info__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+
+          <fieldset class="check-form__group your-info">
+            <legend class="check-form__title">Комментарий</legend>
+            <textarea class="your-info__comment" name="comment" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="check-form__group other-info">
+            <legend class="check-form__title">Дополнительно</legend>
+
+            <label for="other-info__sweetener">Сахарозаменитель</label>
+            <input id="other-info__sweetener" type="checkbox" name="sweetener" checked>
+
+            <label for="other-info__water">Питьевая вода</label>
+            <input id="other-info__water" type="checkbox" name="water">
+
+            <label for="other-info__milk">Молоко</label>
+            <input id="other-info__milk" type="checkbox" name="milk">
+
+            <label for="other-info__vitamins">Витамины</label>
+            <input id="other-info__vitamins" type="checkbox" name="vitamins">
+          </fieldset>
+          <button class="check-form__btn" type="submit">Отправить заявку</button>
+          <small class="check-form__info">* — Обязательные поля</small>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Приглашаем  к сотрудничеству  дилеров!</h2>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
+        <image class="contacts__map" src="" width="" height="" alt="Адрес офиса - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__image" src="" width="" height="" alt="Логотип Кэт Энерджи">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--vk"><a href="vk.com">vk</a></li>
+        <li class="social__item social__item--in"><a href="instagramm.com">in</a></li>
+        <li class="social__item social__item--fb"><a href="facebook.com">fb</a></li>
+      </ul>
+      <a class="page-footer__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="page-footer__author-image" src="" width="" height="" alt="Создано в HTML Academy">
+      </a>
+    </footer>
+  </body>
+</html>
