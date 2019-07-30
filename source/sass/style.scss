@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic');
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic");
 
 body {
   margin: 0;
@@ -6,7 +6,6 @@ body {
 }
 
 @import "variables.scss";
-
 @import "blocks/advantages.scss";
 @import "blocks/advertising.scss";
 @import "blocks/banner.scss";

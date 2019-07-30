@@ -22,7 +22,7 @@
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: left;
   color: #444444;
 }
@@ -65,7 +65,7 @@
   font-size: 12px;
   line-height: 1em;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: lowercase;
   text-align: center;
   color: #444444;
@@ -107,16 +107,16 @@
   margin: 0 40px;
 
   &::after {
-     content: "";
-     position: absolute;
-     top: 4px;
-     left: 56px;
-     display: block;
-     width: 84px;
-     height: 14px;
-     background-color: $white-background;
-     border: 1px solid #cdcdcd;
-     border-radius: 11px;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 56px;
+    display: block;
+    width: 84px;
+    height: 14px;
+    background-color: $white-background;
+    border: 1px solid #cdcdcd;
+    border-radius: 11px;
   }
 }
 

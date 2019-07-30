@@ -13,7 +13,7 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Oswald, sans-serif;
+  font-family: $main-font;
   text-transform: uppercase;
   color: #222222;
   border: none;
@@ -21,7 +21,7 @@
 }
 
 .check-form__group:nth-child(n+3) {
-  box-shadow: -1px -4px 0px 0px #68b738;
+  box-shadow: -1px -4px 0 0 #68b738;
 }
 
 .other-info {
@@ -61,7 +61,7 @@
   font-size: 24px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Oswald, sans-serif;
+  font-family: $main-font;
   text-transform: uppercase;
   color: #111111;
   background-color: $white-background;
@@ -106,7 +106,7 @@
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
   color: #444444;
 }

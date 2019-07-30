@@ -48,7 +48,7 @@
 
 .product__image {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 20px;
 }
 
@@ -59,7 +59,7 @@
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .product__value {
@@ -79,7 +79,7 @@
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: center;
   color: #444444;
 }
