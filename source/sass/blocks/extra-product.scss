@@ -1,0 +1,58 @@
+.extra-product {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  background-color: $white-background;
+}
+
+.extra-product__title {
+  margin: 0;
+  padding: 30px 20px;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-family: $main-font;
+  border-bottom: 1px solid #ededed;
+}
+
+.extra-product__list {
+  margin: 0 0 40px;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.extra-product__item {
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.extra-product__name {
+  margin: 0 0 15px;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-family: $main-font;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-product__detail {
+  width: 100%;
+  margin: 0 0 15px;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  color: #444444;
+}
+
+.extra-product__value {
+  text-align: left;
+}
+
+.extra-product__price {
+  text-align: right;
+}

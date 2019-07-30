@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "variables.scss";
+
+@import "blocks/advantages.scss";
+@import "blocks/advertising.scss";
+@import "blocks/banner.scss";
+@import "blocks/button.scss";
+@import "blocks/categories.scss";
+@import "blocks/check-form.scss";
+@import "blocks/contacts-info.scss";
+@import "blocks/contacts.scss";
+@import "blocks/extra-product.scss";
+@import "blocks/main-info.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/offer.scss";
+@import "blocks/other-info.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/product.scss";
+@import "blocks/site-menu.scss";
+@import "blocks/tasks-info.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/your-info.scss";
