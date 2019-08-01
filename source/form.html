@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи - анкета на подбор питания</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-form">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__image" src="" width="" height="" alt="Логотип Кэт энерджи">
+        <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button" title="Открыть\закрыть меню"></button>
+        <div class="main-nav__wrapper main-nav__wrapper--close">
           <ul class="main-nav__list site-menu">
             <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">Каталог продукции</a></li>
@@ -22,41 +23,58 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__description">Заполните анкету и мы подберем
+        программу&nbsp;питания&nbsp;для&nbsp;вашего&nbsp;кота</p>
 
       <section>
         <h2 class="visually-hidden">Анкета для подбора питания</h2>
         <form class="page-main__form check-form" action="https://htmlacademy.ru/echo" method="post">
           <fieldset class="check-form__group main-info">
-            <label for="main-info__name">Имя:*</label>
-            <input id="main-info__name" type="text" name="name" placeholder="Барсик" required>
-
-            <label for="main-info__weight">Вес (кг):*</label>
-            <input id="main-info__weight" type="number" name="weight" placeholder="7" required>
-
-            <label for="main-info__age">Возраст (лет):</label>
-            <input id="main-info__age" type="number" name="age" placeholder="7">
+            <div class="check-form__item">
+              <label for="main-info__name">Имя:*</label>
+              <input id="main-info__name" type="text" name="name" placeholder="Барсик" required>
+            </div>
+            <div class="check-form__item">
+              <label for="main-info__weight">Вес&nbsp;(кг):*</label>
+              <input id="main-info__weight" type="number" name="weight" placeholder="7" required>
+            </div>
+            <div class="check-form__item">
+              <label for="main-info__age">Возраст&nbsp;(лет):</label>
+              <input id="main-info__age" type="number" name="age" placeholder="7">
+            </div>
           </fieldset>
 
           <fieldset class="check-form__group tasks-info">
-            <label for="tasks-info__slimming">Похудение</label>
-            <input id="tasks-info__slimming" type="radio" name="task" value="slimming" checked>
+            <div class="check-form__item">
+              <input id="tasks-info__slimming" type="radio" name="task" value="slimming" checked>
+              <label for="tasks-info__slimming">Похудение</label>
+            </div>
 
-            <label for="tasks-info__weighting">Набор массы</label>
-            <input id="tasks-info__weighting" type="radio" name="task" value="weighting">
+            <div class="check-form__item">
+              <input id="tasks-info__weighting" type="radio" name="task" value="weighting">
+              <label for="tasks-info__weighting">Набор массы</label>
+            </div>
 
-            <label for="tasks-info__recommend">Не знаю (Нужен ваш совет)</label>
-            <input id="tasks-info__recommend" type="radio" name="task" value="recommend">
+            <div class="check-form__item">
+              <input id="tasks-info__recommend" type="radio" name="task" value="recommend">
+              <label for="tasks-info__recommend">Не знаю (Нужен ваш совет)</label>
+          </div>
           </fieldset>
 
           <fieldset class="check-form__group contacts-info">
             <legend class="check-form__title">Контактные данные (владельца кота)</legend>
 
-            <label for="contacts-info__email">E-mail:*</label>
-            <input id="contacts-info__email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <div class="check-form__item">
+              <label for="contacts-info__email">E&#8209;mail:*</label>
+              <input id="contacts-info__email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <span class="contacts-info__email-icon"></span>
+            </div>
 
-            <label for="contacts-info__tel">Телефон:*</label>
-            <input id="contacts-info__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            <div class="check-form__item">
+              <label for="contacts-info__tel">Телефон:*</label>
+              <input id="contacts-info__tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <span class="contacts-info__tel-icon"></span>
+            </div>
           </fieldset>
 
           <fieldset class="check-form__group your-info">
@@ -66,20 +84,27 @@
 
           <fieldset class="check-form__group other-info">
             <legend class="check-form__title">Дополнительно</legend>
+            <div class="check-form__item">
+              <input id="other-info__sweetener" type="checkbox" name="sweetener" checked>
+              <label for="other-info__sweetener">Сахарозаменитель</label>
+            </div>
 
-            <label for="other-info__sweetener">Сахарозаменитель</label>
-            <input id="other-info__sweetener" type="checkbox" name="sweetener" checked>
+            <div class="check-form__item">
+              <input id="other-info__water" type="checkbox" name="water">
+              <label for="other-info__water">Питьевая вода</label>
+            </div>
 
-            <label for="other-info__water">Питьевая вода</label>
-            <input id="other-info__water" type="checkbox" name="water">
+            <div class="check-form__item">
+              <input id="other-info__milk" type="checkbox" name="milk">
+              <label for="other-info__milk">Молоко</label>
+            </div>
 
-            <label for="other-info__milk">Молоко</label>
-            <input id="other-info__milk" type="checkbox" name="milk">
-
-            <label for="other-info__vitamins">Витамины</label>
-            <input id="other-info__vitamins" type="checkbox" name="vitamins">
+            <div class="check-form__item">
+              <input id="other-info__vitamins" type="checkbox" name="vitamins">
+              <label for="other-info__vitamins">Витамины</label>
+            </div>
           </fieldset>
-          <button class="check-form__btn" type="submit">Отправить заявку</button>
+          <button class="check-form__btn button" type="submit">Отправить заявку</button>
           <small class="check-form__info">* — Обязательные поля</small>
         </form>
       </section>
@@ -89,21 +114,21 @@
         <address class="contacts__address">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
-        <image class="contacts__map" src="" width="" height="" alt="Адрес офиса - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Адрес офиса - г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
       </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__image" src="" width="" height="" alt="Логотип Кэт Энерджи">
+        <img class="page-footer__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
       </a>
       <ul class="page-footer__social social">
-        <li class="social__item social__item--vk"><a href="vk.com">vk</a></li>
-        <li class="social__item social__item--in"><a href="instagramm.com">in</a></li>
-        <li class="social__item social__item--fb"><a href="facebook.com">fb</a></li>
+        <li class="social__item social__item--vk"><a href="vk.com"></a></li>
+        <li class="social__item social__item--in"><a href="instagramm.com"></a></li>
+        <li class="social__item social__item--fb"><a href="facebook.com"></a></li>
       </ul>
       <a class="page-footer__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__author-image" src="" width="" height="" alt="Создано в HTML Academy">
+        HTML Academy
       </a>
     </footer>
   </body>
