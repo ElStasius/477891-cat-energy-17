@@ -1,16 +1,23 @@
 .offer {
   width: 320px;
   min-height: 460px;
-  margin: 0 0 20px;
-  padding: 30px 0 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
   background-color: $white-background;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.offer__wrapper {
+  position: relative;
+  width: 280px;
+}
+
 .offer__title {
   margin: 0 0 20px;
+  padding: 30px 0 0;
   font-size: 36px;
   line-height: 1em;
   font-family: $main-font;
@@ -31,9 +38,94 @@
 }
 
 .offer__image {
-  margin: 0 20px 5px;
+  margin: 0 0 5px;
 }
 
 .offer__btn {
-  margin: 0 20px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .offer {
+    width: 768px;
+    min-height: 735px;
+    margin-bottom: 70px;
+    background-image: none;
+  }
+
+  .offer__wrapper {
+    width: 708px;
+    margin: 0 30px;
+  }
+
+  .offer__title {
+    display: block;
+    width: 428px;
+    margin: 0 0 30px;
+    padding-left: 90px;
+    font-size: 60px;
+    text-align: left;
+    color: $text-color;
+  }
+
+  .offer__info {
+    position: relative;
+    z-index: 10;
+    margin: 0 0 50px;
+    padding-left: 90px;
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $text-color;
+  }
+
+  .offer__btn {
+    position: relative;
+    z-index: 10;
+    width: 245px;
+    margin-top: -592px;
+    margin-left: 90px;
+  }
+
+  .offer__image {
+    width: 709px;
+    height: 609px;
+    margin-top: -35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .offer {
+    width: 1440px;
+    margin: -122px auto 80px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top right;
+  }
+
+  .offer__wrapper {
+    width: 531px;
+    margin: 0;
+    padding-top: 220px;
+    padding-left: 190px;
+  }
+
+  .offer__title {
+    margin-bottom: 43px;
+    padding: 0;
+  }
+
+  .offer__info {
+    margin-bottom: 55px;
+    padding: 0;
+  }
+
+  .offer__image {
+    margin-top: -337px;
+    margin-left: 276px;
+  }
+
+  .offer__btn {
+    margin-top: -295px;
+    margin-left: 0;
+  }
 }

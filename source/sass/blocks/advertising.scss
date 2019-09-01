@@ -1,16 +1,16 @@
 .advertising {
   box-sizing: border-box;
-  min-width: 320px;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 30px 20px 30px;
-  color: #000000;
+  color: #111111;
   background-color: $gray-background;
 }
 
 .advertising__title {
   margin: 0 0 38px;
   font-size: 36px;
-  line-height: 1.2em;
+  line-height: 1em;
   font-weight: 400;
   font-family: $main-font;
   text-align: left;
@@ -22,9 +22,15 @@
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: $extra-font;
   text-align: left;
   color: #444444;
+}
+
+.advertising__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .advertising__list {
@@ -56,16 +62,14 @@
 }
 
 .advertising__item-info {
-  position: absolute;
-  top: 48px;
-  left: 23px;
   display: block;
   width: 80px;
   height: 20px;
+  margin: 0 auto;
   font-size: 12px;
   line-height: 1em;
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: $extra-font;
   text-transform: lowercase;
   text-align: center;
   color: #444444;
@@ -73,7 +77,8 @@
 }
 
 .advertising__info {
-  margin: 0 0 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -128,4 +133,161 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+}
+
+@media (min-width: 768px) {
+  .advertising {
+    width: 768px;
+    padding: 0;
+    background-color: $white-background;
+  }
+
+  .advertising__title {
+    margin: 0 30px 55px;
+    font-size: 60px;
+  }
+
+  .advertising__description {
+    margin: 0 30px 55px;
+    padding-right: 8px;
+    font-size: 16px;
+  }
+
+  .advertising__wrapper {
+    align-items: baseline;
+    margin: 0 30px 247px;
+  }
+
+  .advertising__list {
+    justify-content: flex-start;
+    width: 70%;
+    margin: 0;
+  }
+
+  .advertising__item {
+    width: 162px;
+    min-height: 40px;
+    margin-right: 40px;
+    padding: 16px 0;
+  }
+
+  .advertising__item-title {
+    font-size: 30px;
+  }
+
+  .advertising__item-info {
+    position: relative;
+    top: 10px;
+    display: inline;
+    padding: 0 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    background-color: $white-background;
+  }
+
+  .advertising__info {
+    width: 25%;
+    margin: auto;
+    margin-right: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .advertising__slider-wrapper {
+    text-align: center;
+  }
+
+  .advertising__slider {
+    min-height: 348px;
+    margin: 0;
+    margin-top: 168px;
+  }
+
+  .advertising__image {
+    position: relative;
+  }
+
+  .advertising__slider-button {
+    width: 575px;
+    margin: 0 auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 70px;
+      display: block;
+      width: 428px;
+      height: 6px;
+      background-color: #dcdcdc;
+      border: 1px solid #dcdcdc;
+      border-radius: 2.5px;
+    }
+  }
+
+  .advertising__btn {
+    padding: 0 0 5px;
+    font-size: 20px;
+    background-color: $gray-background;
+    border: none;
+    border-bottom: 1px dotted #bebebe;
+  }
+}
+
+@media (min-width: 1440px) {
+  .advertising {
+    position: relative;
+    width: 1440px;
+    padding: 0 110px 75px;
+    background-color: $gray-background;
+  }
+
+  .advertising__title {
+    position: relative;
+    top: -136px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .advertising__description {
+    width: 432px;
+    margin: 0 0 55px;
+    padding-right: 0;
+  }
+
+  .advertising__wrapper {
+    flex-wrap: wrap;
+    width: 366px;
+    margin: 0;
+  }
+
+  .advertising__list {
+    margin-bottom: 55px;
+  }
+
+  .advertising__item:last-child {
+    margin-right: 0;
+  }
+
+  .advertising__item-title {
+    display: block;
+    width: 163px;
+  }
+
+  .advertising__item-info {
+    background-color: $gray-background;
+  }
+
+  .advertising__info {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin: 0;
+  }
+
+  .advertising__slider-wrapper {
+    position: absolute;
+    top: -170px;
+    right: 100px;
+  }
 }
