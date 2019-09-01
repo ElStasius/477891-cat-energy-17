@@ -1,7 +1,40 @@
 .page-header {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  padding: 12px 20px 0;
+  margin: 0 auto;
+  padding: 10px 20px 0;
   background-color: $white-background;
   border-bottom: 1px solid #ededed;
+}
+
+.page-header__logo {
+  width: 191px;
+  height: 38px;
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    margin-bottom: 45px;
+    padding: 20px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .page-header__logo {
+    width: 191px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    width: 1440px;
+    margin-bottom: 60px;
+    padding: 55px 110px 0;
+  }
 }

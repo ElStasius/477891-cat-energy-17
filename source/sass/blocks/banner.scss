@@ -1,6 +1,6 @@
 .banner {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   margin: 0 0 60px;
   padding: 0;
   background-color: $white-background;
@@ -8,7 +8,7 @@
 
 .banner__link {
   display: block;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   text-align: center;
 
@@ -32,7 +32,31 @@
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: $extra-font;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    position: relative;
+    width: 708px;
+    margin-bottom: 75px;
+    padding: 0 30px;
+  }
+
+  .banner__link {
+    width: 708px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 63px;
+      left: 130px;
+      width: 55px;
+      height: 60px;
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }

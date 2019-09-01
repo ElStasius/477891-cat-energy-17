@@ -1,6 +1,6 @@
 .page-main {
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: $text-color;
   background-color: $white-background;
@@ -30,4 +30,46 @@
   font-family: $main-font;
   text-transform: uppercase;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+  }
+
+  .page-main__title {
+    margin-bottom: 55px;
+    padding: 0 30px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  .page-catalog .page-main__title {
+    margin-bottom: 155px;
+    border-bottom: none;
+  }
+
+  .page-main__description {
+    width: 330px;
+    margin-bottom: 70px;
+    padding-left: 69px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-main {
+    width: 1440px;
+  }
+
+  .page-main__title {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding: 0;
+  }
+
+  .page-main__description {
+    padding-left: 110px;
+  }
 }
