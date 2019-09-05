@@ -22,7 +22,7 @@
   position: relative;
   z-index: 10;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 25px 20px 30px;
   font-size: 24px;
   line-height: 1.2em;
   font-weight: 400;
@@ -44,7 +44,7 @@
 }
 
 .extra-product__name {
-  margin: 0 0 15px;
+  margin: 0 0 6px;
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
@@ -56,8 +56,8 @@
 
 .extra-product__detail {
   width: 100%;
-  margin: 0 0 15px;
-  font-size: 12px;
+  margin: 0 0 13px;
+  font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
   font-family: $extra-font;
@@ -65,17 +65,19 @@
 }
 
 .extra-product__value {
+  padding: 0;
   text-align: left;
 }
 
 .extra-product__price {
+  padding: 0;
   text-align: right;
 }
 
 @media (min-width: 768px) {
   .extra-product {
     width: 708px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     padding: 0 30px;
 
     &::before {
@@ -111,7 +113,7 @@
     justify-content: space-between;
 
     margin: 0;
-    padding: 28px 36px;
+    padding: 23px 36px 26px;
     border: 1px solid #d9d9d9;
   }
 
@@ -123,7 +125,7 @@
 
   .extra-product__detail {
     width: 40%;
-    margin-bottom: 25px;
+    margin-top: 5px;
     font-size: 16px;
   }
 
@@ -145,13 +147,13 @@
 @media (min-width: 1440px) {
   .extra-product {
     width: 1220px;
-    margin-bottom: 80px;
+    margin-bottom: 86px;
     padding: 0 110px;
   }
 
   .extra-product__title {
     margin-left: -35px;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
   }
 
   .extra-product__list {

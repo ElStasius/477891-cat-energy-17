@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  z-index: 1;
   width: 100%;
 }
 
@@ -9,7 +10,7 @@
 }
 
 .main-nav__wrapper--close {
-  display: block;
+  display: none;
 }
 
 .main-nav__list {
@@ -38,7 +39,7 @@
 .main-nav__toggle--open::after {
   content: "";
   position: absolute;
-  top: -28px;
+  top: -25px;
   right: 0;
   width: 24px;
   height: 18px;
@@ -81,7 +82,8 @@
 
   .site-menu__link {
     width: auto;
-    padding: 22px 0;
+    margin-left: 26px;
+    padding: 24px 0;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -97,8 +99,12 @@
 }
 
 @media (min-width: 1440px) {
+  .main-nav__list {
+    padding-top: 17px;
+  }
+
   .site-menu__item {
-    padding-left: 35px;
+    padding-left: 8px;
   }
 
   .site-menu__link {

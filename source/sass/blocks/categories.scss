@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   padding: 0 20px;
   color: $text-color;
   background-color: $white-background;
@@ -19,17 +19,48 @@
 .categories__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 38px 20px 21px;
+  padding: 38px 20px 16px;
   background-color: $gray-background;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+}
+
+.categories__item--slimming {
   &::after {
     content: "";
     position: absolute;
-    top: 202px;
-    display: block;
-    width: 240px;
-    height: 1px;
-    background-color: #d9d9d9;
+    top: 23px;
+    left: 27px;
+    width: 42px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.categories__item--weighting {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-color: transparent;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -44,12 +75,22 @@
 
 .categories__description {
   width: 225px;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-weight: 400;
   font-family: $extra-font;
   text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 210px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
 }
 
 .categories__btn {
@@ -83,24 +124,54 @@
 
 
   .categories__item {
-    margin-bottom: 20px;
-    padding: 80px 50px 60px;
+    margin-bottom: 28px;
+    padding: 77px 53px 60px;
+
+    &::before {
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .categories__item--slimming {
+    &::after {
+      top: 80px;
+      left: 476px;
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .categories__item--weighting {
+    &::after {
+      top: 135px;
+      left: 413px;
+      width: 266px;
+      height: 112px;
+    }
+  }
+
+  .categories__title {
+    margin: 0 0 27px;
+    font-size: 36px;
+  }
+
+  .categories__description {
+    width: 380px;
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #444444;
 
     &::after {
       display: none;
     }
   }
 
-  .categories__title {
-    margin: 0 0 30px;
-    font-size: 36px;
-  }
-
-  .categories__description {
-    width: 380px;
-    margin-bottom: 60px;
-    font-size: 16px;
-    color: #444444;
+  .categories__item--weighting .categories__description {
+    width: 344px;
   }
 
   .categories__btn {
@@ -109,8 +180,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 11px;
-      left: 123px;
+      top: 10px;
+      left: 131px;
       display: block;
       width: 24px;
       height: 11px;
@@ -123,7 +194,7 @@
 @media (min-width: 1440px) {
   .categories {
     width: 1440px;
-    margin-bottom: 62px;
+    margin-bottom: 40px;
     padding: 0 110px;
   }
 
@@ -133,21 +204,53 @@
   }
 
   .categories__item {
-    width: 470px;
+    width: 464px;
     margin-bottom: 20px;
+    padding: 74px 52px 56px;
+
+    &::before {
+      top: 45px;
+      left: 53px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .categories__item:nth-child(2n) {
     margin-left: 80px;
   }
 
+  .categories__item--slimming {
+    &::after {
+      top: 38px;
+      left: 66px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .categories__item--weighting {
+    &::after {
+      top: 66px;
+      left: 36px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
   .categories__title {
-    margin-bottom: 70px;
+    margin-bottom: 74px;
+    padding-left: 23px;
     text-align: center;
   }
 
-  .categories__description {
-    width: 445px;
-    margin-bottom: 36px;
+  .categories__item--weighting .categories__title {
+    padding-left: 68px;
+  }
+
+  .categories__description,
+  .categories__item--weighting .categories__description {
+    width: 462px;
+    margin-bottom: 31px;
   }
 }

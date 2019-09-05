@@ -8,7 +8,7 @@
 
 .page-main__title {
   margin: 0;
-  padding: 30px 20px 40px;
+  padding: 22px 20px 34px;
   font-size: 36px;
   line-height: 1.2em;
   font-weight: 400;
@@ -22,10 +22,10 @@
 }
 
 .page-main__description {
-  margin: 0 0 40px;
+  margin: 0 0 19px;
   padding: 0 20px;
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: 400;
   font-family: $main-font;
   text-transform: uppercase;
@@ -38,14 +38,13 @@
   }
 
   .page-main__title {
-    margin-bottom: 55px;
-    padding: 0 30px;
+    margin-bottom: 33px;
+    padding: 21px 30px;
     font-size: 60px;
-    font-weight: 600;
   }
 
   .page-catalog .page-main__title {
-    margin-bottom: 155px;
+    margin-bottom: 136px;
     border-bottom: none;
   }
 
@@ -67,6 +66,10 @@
     margin: 0 auto;
     margin-bottom: 55px;
     padding: 0;
+  }
+
+  .page-catalog .page-main__title {
+    margin-bottom: 157px;
   }
 
   .page-main__description {

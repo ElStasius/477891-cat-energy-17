@@ -18,8 +18,8 @@
 }
 
 .page-footer__social {
-  margin: 25px 20px;
-  padding: 0 76px 20px;
+  margin: 20px 20px 27px;
+  padding: 0 71px 20px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -84,7 +84,7 @@
     content: "";
     position: absolute;
     top: -8px;
-    right: -5px;
+    right: -6px;
     width: 40px;
     height: 50px;
     background-image: url("../img/htmlacademy.svg");
@@ -96,9 +96,8 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
     width: 708px;
-    padding: 58px 30px 62px;
+    padding: 67px 30px 62px;
   }
 
   .page-footer__logo {
@@ -109,8 +108,24 @@
 
   .page-footer__social {
     margin: 0;
+    margin-left: 15px;
     padding: 0;
     border-bottom: none;
+  }
+
+  .social__item--vk a {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__item--in a {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__item--fb a {
+    width: 14px;
+    height: 28px;
   }
 
   .page-footer__author-logo {

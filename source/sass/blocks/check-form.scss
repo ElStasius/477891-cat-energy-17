@@ -10,7 +10,7 @@
 .check-form__group {
   position: relative;
   margin: 0 auto;
-  padding: 20px 20px 30px;
+  padding: 20px 20px 5px;
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
@@ -24,7 +24,7 @@
     content: "";
     position: absolute;
     z-index: 1;
-    top: 36px;
+    top: 18px;
     right: 1px;
     width: 50%;
     height: 3px;
@@ -36,15 +36,24 @@
   }
 }
 
-.other-info {
-  border: none;
-}
-
 .check-form__item {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 0 15px;
+  margin: 0 0 14px;
+}
+
+.tasks-info {
+  margin-bottom: 21px;
+}
+
+.check-form__group.tasks-info {
+  padding-top: 30px;
+  padding-left: 24px;
+}
+
+.tasks-info .check-form__item {
+  margin-bottom: 24px;
 }
 
 .check-form__item label {
@@ -53,16 +62,21 @@
 
 .check-form__group input:not([type="radio"]):not([type="checkbox"]) {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 15px 13px;
   width: 100%;
   height: 45px;
+  font-size: 16px;
+  line-height: 1em;
+  font-weight: 400;
+  font-family: $main-font;
+  text-transform: uppercase;
   color: #444444;
   border: 1px solid #e6e6e6;
 }
 
 .check-form__group input[type="radio"] + label,
 .check-form__group input[type="checkbox"] + label {
-  margin: 0 0 0 45px;
+  margin: 0 0 0 21px;
 }
 
 .check-form__title {
@@ -70,9 +84,9 @@
   z-index: 10;
   max-width: 181px;
   margin: 0;
-  padding: 20px 20px 30px 0;
+  padding: 6px 20px 12px 0;
   font-size: 24px;
-  line-height: 1.2em;
+  line-height: 1em;
   font-weight: 400;
   font-family: $main-font;
   text-transform: none;
@@ -80,7 +94,12 @@
   background-color: $white-background;
 }
 
-.contacts-info__email-icon::after {
+.contacts-info .check-form__title {
+  padding-top: 5px;
+}
+
+.contacts-info__email-icon {
+  &::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -89,9 +108,11 @@
   height: 13px;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
+  }
 }
 
-.contacts-info__tel-icon::after {
+.contacts-info__tel-icon {
+  &::after {
   content: "";
   position: absolute;
   top: 12px;
@@ -100,13 +121,17 @@
   height: 20px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
+  }
+}
+.check-form__group.your-info {
+  margin-bottom: 21px;
 }
 
 .your-info__comment {
   box-sizing: border-box;
   width: 280px;
   margin: 0;
-  padding: 15px;
+  padding: 18px 0 0 15px;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
@@ -116,10 +141,22 @@
   border: 1px solid #e6e6e6;
 }
 
+.other-info {
+  border: none;
+}
 
+.other-info .check-form__title {
+  margin-bottom: 7px;
+}
+
+.other-info .check-form__item {
+  margin-bottom: 23px;
+  padding-left: 5px;
+}
 
 .check-form__btn {
-  margin: 35px 0 25px;
+  margin: 40px 0 22px;
+  font-size: 16px;
 }
 
 .check-form__info {
@@ -136,11 +173,12 @@
 @media (min-width: 768px) {
   .check-form {
     width: 768px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 
   .check-form__group {
-    padding: 0 69px 70px;
+    margin-bottom: 8px;
+    padding: 0 69px 40px;
     font-size: 20px;
     border: none;
 
@@ -157,7 +195,21 @@
 
     & input:not([type="radio"]):not([type="checkbox"]) {
       height: 52px;
+      padding: 15px 23px;
+      font-size: 20px;
     }
+  }
+
+  .check-form__item {
+    margin-bottom: 20px;
+  }
+
+  .check-form__item label {
+    padding-left: 3px;
+  }
+
+  .tasks-info .check-form__item label {
+    padding-left: 23px;
   }
 
   .tasks-info {
@@ -166,50 +218,82 @@
     border: 1px solid #e6e6e6;
   }
 
-  .your-info__comment {
-    width: 630px;
-    height: 174px;
-    font-size: 20px;
+  .tasks-info .check-form__item {
+    margin-bottom: 30px;
+  }
+
+  .tasks-info .check-form__item:last-child {
+    margin-bottom: 11px;
   }
 
   .check-form__wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .your-info__comment {
+    width: 630px;
+    height: 174px;
+    padding-top: 14px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .contacts-info__email-icon {
+    &::after {
+    top: 23px;
+    right: 17px;
+    }
+  }
+
+  .contacts-info__tel-icon {
+    &::after {
+    top: 21px;
+    right: 14px;
+    }
   }
 
   .other-info .check-form__item {
     box-sizing: border-box;
     width: 50%;
+    margin-bottom: 48px;
 
     &:nth-child(2n) {
       padding-left: 30px;
     }
   }
 
-  .check-form__item {
-    margin-bottom: 50px;
+  .other-info .check-form__item label {
+    padding-left: 16px;
+  }
+
+  .other-info .check-form__wrapper {
+    flex-direction: row;
+    padding-top: 59px;
   }
 
   .check-form__title {
     max-width: 513px;
     margin-left: -39px;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
     padding: 0 39px;
     font-size: 36px;
   }
 
   .check-form__btn {
+    width: 285px;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 16px 0;
     font-size: 20px;
   }
 
   .check-form__info {
     align-self: center;
-    margin-top: 20px;
-    padding-left: 60px;
+    margin-top: 12px;
+    margin-right: 105px;
     font-size: 16px;
   }
 }
@@ -227,16 +311,27 @@
     padding: 0 110px;
   }
 
+  .check-form__item {
+    margin-bottom: 20px;
+  }
+
+  .check-form__title {
+    margin-bottom: 69px;
+  }
+
   .main-info {
     width: 570px;
     margin-right: 0;
+    margin-left: 110px;
+    padding: 0;
   }
 
   .tasks-info {
     box-sizing: border-box;
     width: 570px;
     height: 194px;
-    margin-left: 0;
+    margin: 0;
+    margin-right: 110px;
     padding: 35px 25px;
 
     & .check-form__item {
@@ -249,6 +344,10 @@
     flex-wrap: wrap;
     width: 100%;
 
+    & .check-form__wrapper {
+      flex-direction: row;
+    }
+
     & .check-form__item {
       width: 570px;
     }
@@ -256,6 +355,10 @@
 
   .your-info {
     width: 100%;
+
+    &.check-form__group {
+      margin-bottom: 69px;
+    }
   }
 
   .your-info__comment {
@@ -264,19 +367,15 @@
 
   .other-info {
     width: 100%;
-  }
 
-  .check-form__item {
-    margin-bottom: 20px;
-  }
+    & .check-form__item {
+      width: 245px;
+      margin-bottom: 50px;
+    }
 
-  .other-info .check-form__item {
-    width: 245px;
-    margin-bottom: 50px;
-  }
-
-  .other-info .check-form__item:nth-child(2n) {
-    padding-left: 0;
+    & .check-form__item:nth-child(2n) {
+      padding-left: 0;
+    }
   }
 
   .check-form__btn {
@@ -285,6 +384,7 @@
 
   .check-form__info {
     width: 570px;
+    margin-right: 0;
     text-align: left;
   }
 }
