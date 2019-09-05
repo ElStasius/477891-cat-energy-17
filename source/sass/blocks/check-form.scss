@@ -100,27 +100,27 @@
 
 .contacts-info__email-icon {
   &::after {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 15px;
-  width: 17px;
-  height: 13px;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .contacts-info__tel-icon {
   &::after {
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 11px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -244,15 +244,15 @@
 
   .contacts-info__email-icon {
     &::after {
-    top: 23px;
-    right: 17px;
+      top: 23px;
+      right: 17px;
     }
   }
 
   .contacts-info__tel-icon {
     &::after {
-    top: 21px;
-    right: 14px;
+      top: 21px;
+      right: 14px;
     }
   }
 
@@ -298,6 +298,7 @@
     font-size: 16px;
   }
 }
+
 @media (min-width: 1440px) {
   .check-form {
     display: flex;
