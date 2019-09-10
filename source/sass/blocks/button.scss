@@ -14,4 +14,15 @@
   color: #ffffff;
   background-color: #68b738;
   border: none;
+  outline: none;
+
+  &:hover {
+    border: none;
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    outline: red;
+    opacity: 0.3;
+  }
 }

@@ -10,9 +10,18 @@
 }
 
 .page-header__logo {
+  z-index: 10;
   width: 191px;
   height: 38px;
-  z-index: 1000;
+  margin-bottom: 12px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: 768px) {
@@ -25,16 +34,27 @@
     border-bottom: none;
   }
 
-  .page-header__logo {
-    width: 191px;
-    height: auto;
+  .page-header__logo img {
+    width: 173px;
+    height: 58px;
+    margin-top: 4px;
   }
 }
 
 @media (min-width: 1440px) {
   .page-header {
     width: 1440px;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
     padding: 56px 111px 0;
+  }
+
+  .page-index .page-header {
+    margin-bottom: 0;
+  }
+
+  .page-header__logo img {
+    width: 202px;
+    height: 59px;
+    margin-top: -6px;
   }
 }

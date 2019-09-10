@@ -7,10 +7,6 @@
   background-color: $gray-background;
 }
 
-.page-index .contacts {
-  background-color: $white-background;
-}
-
 .contacts__wrapper {
   position: relative;
   display: flex;
@@ -19,6 +15,16 @@
   flex-wrap: wrap;
   margin-bottom: -37px;
   background-color: $gray-background;
+}
+
+.page-index {
+  & .contacts {
+    background-color: $white-background;
+  }
+
+  & .contacts__wrapper {
+    background-color: $white-background;
+  }
 }
 
 .contacts__title {

@@ -52,6 +52,8 @@
   position: absolute;
   top: 0;
   left: 20px;
+  width: 140px;
+  height: 144px;
 }
 
 .product__detail {
@@ -92,6 +94,10 @@
   font-size: 16px;
   color: #444444;
   background-color: $gray-background;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: 768px) {

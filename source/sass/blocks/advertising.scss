@@ -149,6 +149,16 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+
+  &:hover {
+    border-bottom: 1px solid #a0a0a0;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .advertising__btn--after {
