@@ -2,11 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name = "viewport" content = "width = device-width">
+    <meta name="viewport" content="width = device-width,initial-scale=1">
     <title>Кэт энерджи - каталог товаров</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-catalog">
+    <div class="include-sprite">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <picture>
@@ -16,11 +19,11 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button" title="Открыть\закрыть меню"></button>
+        <button class="visually-hidden main-nav__toggle main-nav__toggle--open" type="button" title="Открыть\закрыть меню"></button>
         <div class="main-nav__wrapper main-nav__wrapper--close">
           <ul class="main-nav__list site-menu">
             <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">Каталог продукции</a></li>
+            <li class="site-menu__item"><a class="site-menu__link site-menu__link--active">Каталог продукции</a></li>
             <li class="site-menu__item"><a class="site-menu__link" href="form.html">Подбор программы</a></li>
           </ul>
         </div>
